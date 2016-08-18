@@ -1,5 +1,5 @@
 #jdk pre installed
-FROM tomcat:8 
+FROM tomcat:8.5-jre8
 MAINTAINER Wayner Barrios <waybarrios@gmail.com>
 
 #
