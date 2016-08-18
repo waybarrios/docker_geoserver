@@ -1,4 +1,5 @@
-FROM tomcat:8 #jdk pre installed
+#jdk pre installed
+FROM tomcat:8 
 MAINTAINER Wayner Barrios <waybarrios@gmail.com>
 
 #
