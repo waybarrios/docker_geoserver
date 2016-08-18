@@ -18,8 +18,9 @@ RUN cd /usr/local/tomcat/webapps \
     && wget --progress=bar:force:noscroll http://build.geonode.org/geoserver/latest/geoserver-$GEOSERVER_VERSION.war \
     && mkdir $GEOSERVER_FOLDER \
     && mv geoserver-$GEOSERVER_VERSION.war $GEOSERVER_FOLDER/geoserver.war \
-    
-    
+    && cd $GEOSERVER_FOLDER \
+    && unzip geoserver.war \
+    && rm geoserver.war \
     && mkdir $GEOSERVER_DATA_DIR
 
 #useful for import data into this folder 
